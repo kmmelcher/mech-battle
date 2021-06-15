@@ -10,7 +10,7 @@ The game starts with robots (size 10x10) spawning at different points on a diago
 #### *1. Rotate: ↪↩*
 It moves the robot 90 degrees around its own axis, which can be either left or right.
 
-#### *two. Move: 🚶‍♂️💨*
+#### *2. Move: 🚶‍♂️💨*
 The robot moves forward 10 pixels.
 
 #### *3. Scan: 🤖:exclamation:*
