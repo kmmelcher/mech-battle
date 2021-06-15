@@ -17,7 +17,7 @@ The robot moves forward 10 pixels.
 The robot scans the entire map, finding the exact position of the enemy. Until the map is scanned, the bot won't know where the enemy is. Every time one robot scans the map, the other must be told that it has been scanned.
 
 #### *4. Shoot: :gun: | Reload 🔃*
-The robot fires a shot in an attempt to hit the enemy. The shot has a range of 20x10, and instantly destroys the enemy if it is hit. Every time a shot is fired, the robot must reload its weapon, enabling the weapon to fire again. 
+The robot fires a shot in an attempt to hit the enemy. The shot has a range of 20x10, and instantly destroys the enemy if it is hit. Every time a shot is fired, the robot must reload its weapon, enabling it to fire again. 
 
 ### *How to play:*
 To play Mech Battle, basically, the player must type the highlighted key in the sentence that contains the action that must be performed.
@@ -44,7 +44,7 @@ O robô avança 10 pixels a frente.
 O robô escaneia o mapa inteiro, descobrindo a exata posição do robô inimigo. Enquanto não escanear o mapa, ele não irá saber onde o robô inimigo se encontra. Toda vez que um robô escanear o mapa, o outro deve ser avisado que foi escaneado.
 
 #### *4. Atirar: :gun: | Recarregar 🔃*
-O robô dispara um tiro na tentativa de acertar o robô inimigo. O tiro tem um alcance de 20x10, e destroi o robô inimigo instantaneamente, caso este seja atingido. Toda vez que for disparado um tiro, o robô precisa recarregar sua arma, habilitando a arma para um novo disparo.
+O robô dispara um tiro na tentativa de acertar o inimigo. O tiro tem um alcance de 20x10, e destroi o robô inimigo instantaneamente, caso este seja atingido. Toda vez que for disparado um tiro, o robô precisa recarregar sua arma, habilitando-a para um novo disparo.
 
 ### *Como Jogar:*
 Para jogar Mech Battle, basicamente, é preciso que o jogador digite a tecla destacada na frase que contém a ação que deve ser executada
