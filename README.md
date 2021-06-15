@@ -23,7 +23,7 @@ The robot fires a shot in an attempt to hit the enemy. The shot has a range of 2
 To play Mech Battle, basically, the player must type the highlighted key in the sentence that contains the action that must be performed.
 > Example:
 >
-> (D)you want to perform this action?
+> (D)o you want to perform this action?
 >
 > *Player must type "D" key and press Enter* 
 
