@@ -1,0 +1,59 @@
+Main
+association Game
+---
+- game: Game
+---
++ static main(args: String[]): void
+- mainMenu(): void
+- menuCommand(command: String): void
+- start(): void
+- howToPlay(): String
+- exit(): void
+---
+
+Game
+composes Robot
+composes Map
+---
+- map: Map
+- playerRobot: Robot
+- pcRobot: Robot
+- numberOfActions: int
+---
++ Game(map: Map, playerRobot: Robot, pcRobot: Robot)
++ start(): void
+- availableActions(robot: Robot): void
+- actionCommand(command: String): void
+- move(robot: Robot): boolean
+- scan(robot: Robot): void
+- shoot(robot: Robot): void
+- reload(robot: Robot): void
+---
+
+Robot
+---
+- name: String
+- needsReload: boolean
+- x: int
+- y: int
+- orientation: String
+---
++ Robot(name: String)
++ spin(direction: String): void
++ move(): boolean
++ scan(): void
++ shoot(): boolean
++ reload(): void
++ equals(obj: Object): boolean
++ hashCode(): int
++ getNeedsReload(): boolean
+---
+
+Map
+---
+- height: int
+- length: int
+---
++ Map(height: int, length: int)
++ print(robotX: int, robotY: int, robotOrientation: String): String[]
+---
