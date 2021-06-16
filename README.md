@@ -27,6 +27,9 @@ To play Mech Battle, basically, the player must type the highlighted key in the 
 >
 > *Player must type "D" key and press Enter* 
 
+### UML System Model
+To create the UML version of Mech Battle, the `UML.txt` file was created. The content of this file must be inserted in the main text field of the site [Modeligado](https://matheusgr.github.io/modeligado/edit.html) to analyze the system class diagram. Modeligado was created by [Matheus Gaudêncio do Rêgo](https://github.com/matheusgr) and the system repository can be found [here](https://github.com/matheusgr/modeligado). 
+
 ## *Em português | In portuguese:*
 
 ### *O que é Mech Battle?*
@@ -53,3 +56,6 @@ Para jogar Mech Battle, basicamente, é preciso que o jogador digite a tecla des
 > (D)eseja executar esta ação?
 > 
 > *Jogador deve digitar a tecla "D" e pressionar Enter*
+
+### Modelo UML do Sistma
+Para a criação da versão UML de Mech Battle, foi criado o arquivo `UML.txt`. O conteúdo deste arquivo deve ser inserido no campo de texto principal do site [Modeligado](https://matheusgr.github.io/modeligado/edit.html) para ser analisado o diagrama de classes do sistema. O Modeligado foi criado por [Matheus Gaudêncio do Rêgo](https://github.com/matheusgr) e o repositório do sistema pode ser encontrado [aqui](https://github.com/matheusgr/modeligado).
