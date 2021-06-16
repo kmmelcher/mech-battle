@@ -20,9 +20,9 @@ composes Map
 - pcRobot: Robot
 - numberOfActions: int
 ---
-+ Game(map: Map, playerRobot: Robot, pcRobot: Robot)
++ Game()
 + start(): void
-- availableActions(robot: Robot): void
+- availableActions(robot: Robot): String
 - actionCommand(command: String): void
 - move(robot: Robot): boolean
 - scan(robot: Robot): void
@@ -42,7 +42,7 @@ Robot
 + spin(direction: String): void
 + move(): boolean
 + scan(): void
-+ shoot(): boolean
++ shoot(): void
 + reload(): void
 + equals(obj: Object): boolean
 + hashCode(): int
@@ -54,6 +54,5 @@ Map
 - height: int
 - length: int
 ---
-+ Map(height: int, length: int)
 + print(robotX: int, robotY: int, robotOrientation: String): String[]
 ---
