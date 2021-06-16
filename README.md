@@ -11,7 +11,7 @@ The game starts with robots (size 1x1) spawning at different points on a diagona
 It moves the robot 90 degrees around its own axis, which can be either left or right.
 
 #### *2. Move: 🚶‍♂️💨*
-The robot moves forward 1 pixel.
+The robot moves forward 1 pixel. If one robot collides on the enemy while moving, both are destroyed and the game ends in a draw. 
 
 #### *3. Scan: 🤖:exclamation:*
 The robot scans the entire map, finding the exact position of the enemy. Until the map is scanned, the bot won't know where the enemy is. Every time one robot scans the map, the other must be told that it has been scanned.
@@ -38,7 +38,7 @@ O jogo começa com os robôs (de tamanho 1x1) nascendo em pontos diferentes da d
 Move o robô em 90 graus em torno de seu próprio eixo, podendo ser uma movimentação tanto para a esquerda quanto para a direita.
 
 #### *2. Mover: 🚶‍♂️💨*
-O robô avança 1 pixel a frente.
+O robô avança 1 pixel a frente. Se um robô colide no outro enquanto se move, ambos são destruídos e o jogo termina empatado.
 
 #### *3. Escanear: 🤖:exclamation:*
 O robô escaneia o mapa inteiro, descobrindo a exata posição do robô inimigo. Enquanto não escanear o mapa, ele não irá saber onde o robô inimigo se encontra. Toda vez que um robô escanear o mapa, o outro deve ser avisado que foi escaneado.
