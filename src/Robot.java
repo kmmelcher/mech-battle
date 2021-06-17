@@ -1,7 +1,11 @@
 public class Robot {
 
+	public enum Orientation {
+		UP, DOWN, LEFT, RIGHT;
+	}
+	
 	private String name;
-	private String orientation;
+	private Orientation orientation;
 	private boolean needsReload;
 	private int x;
 	private int y;
@@ -11,15 +15,25 @@ public class Robot {
 		this.x = x;
 		this.y = y;
 		this.needsReload = false;
-		this.orientation = "up";
+		this.orientation = Orientation.UP;
 	}
 	
-	public void spin(String direction) {
-		
+	public void spin(Orientation direction) {
+		this.orientation = direction;
 	}
 	
-	public boolean move() {
+	public void move() {
 		
+		switch (this.orientation) {
+		case UP:
+			this.x++;
+		case DOWN:
+			this.x--;
+		case LEFT:
+			this.y++;
+		case RIGHT:
+			this.y--;
+		}
 	}
 	
 	public void scan() {
@@ -28,14 +42,23 @@ public class Robot {
 	
 	public void shoot() {
 		
+		this.needsReload = true;
 	}
 	
 	public void reload() {
-		
+		this.needsReload = false;
 	}
 	
 	public boolean getNeedsReload() {
 		return this.needsReload;
+	}
+	
+	public int getX() {
+		return this.x;
+	}
+	
+	public int getY() {
+		return this.y;
 	}
 
 	@Override

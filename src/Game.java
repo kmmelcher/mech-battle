@@ -8,8 +8,8 @@ public class Game {
 	
 	public Game() {
 		this.map = new Map();
-		this.playerRobot = new Robot("Player", 1, 1);
-		this.pcRobot = new Robot("Enemy", 10, 10);
+		this.playerRobot = new Robot("Player", 10, 0);
+		this.pcRobot = new Robot("Enemy", 0, 10);
 	}
 	
 	public void start() {
