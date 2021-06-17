@@ -27,22 +27,47 @@ public class Robot {
 		switch (this.orientation) {
 		case UP:
 			this.x++;
+			break;
 		case DOWN:
 			this.x--;
+			break;
 		case LEFT:
 			this.y++;
+			break;
 		case RIGHT:
 			this.y--;
+			break;
 		}
 	}
 	
-	public void scan() {
+	public boolean shoot(int enemyX, int enemyY) {
+		boolean isEnemyDestroyed = false;
 		
-	}
-	
-	public void shoot() {
+		switch (this.orientation) {
+		case UP:
+			if (enemyY == this.y && enemyX <= this.x+2) {
+				isEnemyDestroyed = true;
+			}
+			break;
+		case DOWN:
+			if (enemyY == this.y && enemyX <= this.x-2) {
+				isEnemyDestroyed = true;
+			}
+			break;
+		case LEFT:
+			if (enemyX == this.x && enemyY <= this.y-2) {
+				isEnemyDestroyed = true;
+			}
+			break;
+		case RIGHT:
+			if (enemyX == this.x && enemyY <= this.y+2) {
+				isEnemyDestroyed = true;
+			}
+			break;
+		}
 		
 		this.needsReload = true;
+		return isEnemyDestroyed;
 	}
 	
 	public void reload() {
