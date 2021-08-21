@@ -10,12 +10,12 @@ public class Robot {
 	private int x;
 	private int y;
 	
-	public Robot(String name, int x, int y) {
+	public Robot(String name, int x, int y, Orientation orientation) {
 		this.name = name;
 		this.x = x;
 		this.y = y;
 		this.needsReload = false;
-		this.orientation = Orientation.UP;
+		this.orientation = orientation;
 	}
 	
 	public void spin(Orientation direction) {
@@ -74,6 +74,10 @@ public class Robot {
 		this.needsReload = false;
 	}
 	
+	public void setOrientation(Orientation orientation) {
+		this.orientation = orientation;
+	}
+	
 	public boolean getNeedsReload() {
 		return this.needsReload;
 	}
@@ -84,6 +88,10 @@ public class Robot {
 	
 	public int getY() {
 		return this.y;
+	}
+	
+	public Orientation getOrientation() {
+		return this.orientation;
 	}
 
 	@Override
