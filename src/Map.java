@@ -78,17 +78,19 @@ public class Map {
 		String printedMap = "";
 		
 		for (int x = 0; x < map.length; x++) {
-			for (int y = 0; y > map[x].length; y++) {
+			for (int y = 0; y < map[x].length; y++) {
 				
 				String partOfTheMap = printOrientation(robot, x, y);
 				
 				if (robot.getX() == x && robot.getY() == y) {
 					partOfTheMap = " 🤖 ";
 				}
+				
+				printedMap += partOfTheMap;
 			}
 			printedMap += "\n";
 		}
-		return printedMap.trim();
+		return printedMap;
 	}
 	
 	private String printOrientation(Robot robot, int x, int y) {
