@@ -20,6 +20,7 @@ public class Game {
 		while (this.isRunning) {
 			// Print map to console
 			this.playerRobot.move();
+			this.playerRobot.shoot(3, 3);
 			System.out.println(map.print(this.playerRobot, this.pcRobot));
 			break;
 		}
