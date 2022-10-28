@@ -19,7 +19,9 @@ public class Game {
 	public void start() {
 		this.isRunning = true;
 		while (this.isRunning) {
-			System.out.println("True");
+			// Print map to console
+			System.out.println(map.print(this.playerRobot, this.pcRobot));
+			break;
 		}
 	}
 	
