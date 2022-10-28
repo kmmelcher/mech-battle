@@ -1,4 +1,3 @@
-
 public class Game {
 	
 	private Map map;
@@ -20,6 +19,7 @@ public class Game {
 		this.isRunning = true;
 		while (this.isRunning) {
 			// Print map to console
+			this.playerRobot.move();
 			System.out.println(map.print(this.playerRobot, this.pcRobot));
 			break;
 		}
