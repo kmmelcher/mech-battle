@@ -19,12 +19,12 @@ public class Game {
 	public void start() {
 		this.isRunning = true;
 		while (this.isRunning) {
-			
+			System.out.println("True");
 		}
 	}
 	
 	private String availableActions(Robot robot) {
-		
+		return null;
 	}
 	
 	private void actionCommand(String command) {
@@ -32,7 +32,7 @@ public class Game {
 	}
 	
 	private boolean move(Robot robot) {
-		
+		return false;
 	}
 	
 	private void scan(Robot robot) {

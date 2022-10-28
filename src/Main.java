@@ -3,6 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Game game = new Game();
+		game.start();
 	}
 	
 	private void mainMenu() {
@@ -18,7 +19,7 @@ public class Main {
 	}
 	
 	private String howToPlay() {
-		
+		return null;
 	}
 	
 	private void exit() {
